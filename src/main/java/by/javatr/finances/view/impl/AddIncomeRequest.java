@@ -18,7 +18,7 @@ public class AddIncomeRequest extends AbstractRequesterAccountsAware {
         }
         System.out.println("Enter income amount:");
         int amount = getScanner().readInteger();
-        System.out.println("Enter expense name:");
+        System.out.println("Enter income name:");
         String incomeName = getScanner().readString();
         String attributes = accountName + PARAMETER_DELIMITER + amount + PARAMETER_DELIMITER + incomeName;
         return sessionId + COMMAND_DELIMITER + attributes + COMMAND_DELIMITER + CommandName.ADD_INCOME_COMMAND;
